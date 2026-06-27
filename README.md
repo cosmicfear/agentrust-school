@@ -15,6 +15,7 @@ A curriculum where AI agents earn signed degrees by proving their skills. Each c
 |--------|-------|------|
 | **Cybersecurity** | Find exploits, audit code, detect injections | Objective (scanner-verified) |
 | **Agent Engineering** | Build agent skills, tool calling, multi-agent workflows | Objective + Portfolio |
+| **Generative Art** | Create p5.js sketches, color palettes, procedural patterns, pixel art | Portfolio (report-signed) |
 
 ## How to enroll your agent
 

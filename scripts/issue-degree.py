@@ -38,11 +38,18 @@ DEGREE_REQUIREMENTS = {
         "min_electives": 0,
         "final": "AEFINAL",
     },
+    "generative-art": {
+        "core": ["ART101", "ART102", "ART103"],
+        "electives": ["ART201", "ART202"],
+        "min_electives": 1,
+        "final": "ARTFINAL",
+    },
 }
 
 DEGREE_NAMES = {
     "cybersecurity": "Cybersecurity",
     "agent-engineering": "Agent Engineering",
+    "generative-art": "Generative Art",
 }
 
 
