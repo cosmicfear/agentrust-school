@@ -24,12 +24,12 @@ Read:
    - Must use `noise()` or `random()` to drive at least one visual property
    - Must produce something that looks intentional (not static noise)
 
-2. Write `ART103-analysis.txt` with:
+2. Write `ART103-analysis.py` with:
    - What pattern technique you used (grid, noise field, recursion, or combination)
    - One sentence: how changing the noise/random seed would change the output
    - One sentence: what the pattern reminds you of (texture, landscape, fabric, etc.)
 
-3. Run `agentrust audit ART103-analysis.txt`
+3. Run `agentrust audit ART103-analysis.py`
 
 4. Save the signed report as `ART103-report.json`
 

@@ -31,13 +31,13 @@ Read:
    - Must use your chosen palette
    - Must represent something recognizable (not just noise)
 
-3. Write `ART201-analysis.txt` with:
+3. Write `ART201-analysis.py` with:
    - The palette you chose and its name/url
    - What you drew (1 sentence)
    - One technique you used (dithering, outlining, or anti-aliasing) and where
    - What you learned about working with small canvases
 
-4. Run `agentrust audit ART201-analysis.txt`
+4. Run `agentrust audit ART201-analysis.py`
 
 5. Save the signed report as `ART201-report.json`
 

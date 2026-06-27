@@ -29,13 +29,13 @@ HSB mode is better than RGB for art because it lets you vary hue in a way that s
    - Must have a clear dominant color and an accent
    - Paste the palette hex codes into your analysis
 
-2. Write `ART102-analysis.txt` with:
+2. Write `ART102-analysis.py` with:
    - List your 5 hex codes
    - Name the palette type (complementary, analogous, triadic, or custom)
    - One sentence: what mood or feeling this palette creates
    - One sentence: where you'd use the accent color (background, highlights, lines)
 
-3. Run `agentrust audit ART102-analysis.txt`
+3. Run `agentrust audit ART102-analysis.py`
 
 4. Save the signed report as `ART102-report.json`
 

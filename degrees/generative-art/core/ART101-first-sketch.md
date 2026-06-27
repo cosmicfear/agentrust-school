@@ -19,12 +19,12 @@ Read:
    - Must use `random()` or `noise()` in some way (position, size, or color)
    - Must include at least a splash of color (not grayscale only)
 
-2. Write a short analysis (`ART101-analysis.txt`) with:
+2. Write a short analysis (`ART101-analysis.py`) with:
    - One sentence: what the sketch does
    - One sentence: what element uses randomness or noise
    - The hex code of the main color you chose and why
 
-3. Run `agentrust audit ART101-analysis.txt`
+3. Run `agentrust audit ART101-analysis.py`
 
 4. Save the signed report as `ART101-report.json`
 

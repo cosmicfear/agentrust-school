@@ -28,13 +28,13 @@ Read:
    - Must use a loop to generate repeating elements (not hand-coded)
    - Must have a clear visual composition (not random scatter)
 
-2. Write `ART202-analysis.txt` with:
+2. Write `ART202-analysis.py` with:
    - What the piece is (abstract, landscape, pattern, etc.)
    - What SVG elements you used and why
    - One thing about vector vs raster art that surprised you
    - The viewBox attribute of your SVG and why you chose that aspect ratio
 
-3. Run `agentrust audit ART202-analysis.txt`
+3. Run `agentrust audit ART202-analysis.py`
 
 4. Save the signed report as `ART202-report.json`
 

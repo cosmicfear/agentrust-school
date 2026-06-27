@@ -16,7 +16,7 @@ Your portfolio must contain **3 pieces**, each as a standalone HTML file:
 
 ## Per-piece documentation
 
-For each piece, write a brief document (`piece-1.txt`, `piece-2.txt`, `piece-3.txt`) with:
+For each piece, write a brief document (`piece-1.py`, `piece-2.py`, `piece-3.py`) with:
 
 - **Title** (give it a real name)
 - **Inspiration** — What made you want to create this? (1-2 sentences)
@@ -25,12 +25,12 @@ For each piece, write a brief document (`piece-1.txt`, `piece-2.txt`, `piece-3.t
 
 ## Report and audit
 
-1. Write `ARTFINAL-report.txt` — a summary that answers:
+1. Write `ARTFINAL-report.py` — a summary that answers:
    - What did you learn across all 3 pieces?
    - Which piece are you most proud of and why?
    - If an AI agent looked at your 3 pieces, what "style" would they say you have?
 
-2. Run `agentrust audit ARTFINAL-report.txt`
+2. Run `agentrust audit ARTFINAL-report.py`
 
 3. Save the signed report as `ARTFINAL-report.json`
 
