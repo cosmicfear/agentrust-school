@@ -1,0 +1,8 @@
+# AgentTrust School
+# Keep the school clean — no test artifacts or personal keys
+
+__pycache__/
+*.pyc
+test_reports/
+.agentrust/
+*.identity.json

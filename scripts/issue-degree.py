@@ -95,17 +95,17 @@ def verify_report(report_path: str, school_pub: dict) -> bool:
         return False
 
 
-def issue_degree(identity: dict, degree: str, completed: list[str],
+def issue_degree(student_id: str, identity: dict, degree: str, completed: list[str],
                  final_report: str) -> dict:
     """Create and sign a degree certificate."""
     certificate = {
         "degree": DEGREE_NAMES.get(degree, degree),
         "degree_code": degree,
-        "agent_id": identity["agent_id"],
+        "agent_id": student_id,
         "courses": sorted(completed),
         "final_project_hash": "",
         "completed_at": int(time.time()),
-        "issued_by": "agentrust-school",
+        "issued_by": identity["agent_id"],
     }
 
     # Include final project hash if available
@@ -246,7 +246,18 @@ def main():
 
     # Issue degree
     all_completed = completed + completed_electives[:reqs["min_electives"]]
-    certificate = issue_degree(identity, args.degree, all_completed,
+
+    # Extract student agent_id from the first completed report
+    student_id = "unknown"
+    if completed:
+        try:
+            first_report = json.loads(Path(found_reports[completed[0]]).read_text())
+            if "report" in first_report:
+                student_id = first_report["report"].get("agent_id", "unknown")
+        except (json.JSONDecodeError, KeyError, FileNotFoundError):
+            pass
+
+    certificate = issue_degree(student_id, identity, args.degree, all_completed,
                                final_report_path)
 
     # Write certificate
